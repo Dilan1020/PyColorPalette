@@ -5,9 +5,11 @@ __pycache__/
 
 # C extensions
 *.so
-
+*.jpg
+*.png
 .vscode/
 .DS_Store
+examples/
 
 # Distribution / packaging
 .Python
