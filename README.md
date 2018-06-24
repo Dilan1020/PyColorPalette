@@ -28,26 +28,22 @@ print(pal.get_color(index=3, ratio=True, rounded=True))
 
 ## Examples
 
-![Alt text] (examples/example1.jpg "Example 1")
-![Alt text] (examples/ex_1_1.png "")
-![Alt text] (examples/ex_1_2.png "")
-![Alt text] (examples/ex_1_3.png "")
-![Alt text] (examples/ex_1_4.png "")
-![Alt text] (examples/ex_1_5.png "")
-![Alt text] (examples/example2.png "Example 2")
-![Alt text] (examples/ex_2_1.png "")
-![Alt text] (examples/ex_2_2.png "")
-![Alt text] (examples/ex_2_3.png "")
-![Alt text] (examples/example3.jpg "Example 3")
-![Alt text] (examples/ex_3_1.png "")
-![Alt text] (examples/ex_3_2.png "")
-![Alt text] (examples/ex_3_3.png "")
-![Alt text] (examples/ex_3_4.png "")
-![Alt text] (examples/ex_3_5.png "")
-
-
-
-
+![Alt text] (examples/example1.jpg?raw=true  "Example 1")
+![Alt text] (examples/ex_1_1.png?raw=true  "")
+![Alt text] (examples/ex_1_2.png?raw=true  "")
+![Alt text] (examples/ex_1_3.png?raw=true  "")
+![Alt text] (examples/ex_1_4.png?raw=true  "")
+![Alt text] (examples/ex_1_5.png?raw=true  "")
+![Alt text] (examples/example2.png?raw=true  "Example 2")
+![Alt text] (examples/ex_2_1.png?raw=true  "")
+![Alt text] (examples/ex_2_2.png?raw=true  "")
+![Alt text] (examples/ex_2_3.png?raw=true  "")
+![Alt text] (examples/example3.jpg?raw=true  "Example 3")
+![Alt text] (examples/ex_3_1.png?raw=true  "")
+![Alt text] (examples/ex_3_2.png?raw=true  "")
+![Alt text] (examples/ex_3_3.png?raw=true  "")
+![Alt text] (examples/ex_3_4.png?raw=true  "")
+![Alt text] (examples/ex_3_5.png?raw=true  "")
 
 ## Installation
 
