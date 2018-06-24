@@ -1,6 +1,6 @@
 # PyColorPalette
 
-PyColorPalette is a tool that is able to pull a list of the top colors, or the color at a specific index, from a given image through the process of kmeans clustering. Images can be provided either through a direct path or from a URL. Along with the RGB color you have the option to also retreive the percentage of the image that specific color takes up. 
+PyColorPalette is a tool that is able to pull a list of the top colors, or the color at a specific index, from a given image through the process of K-means clustering. Images can be provided either through a direct path or from a URL. Along with the RGB color you have the option to also retreive the percentage of the image that specific color takes up. 
 
 ## Dependencies
 
@@ -14,10 +14,12 @@ pip install numpy
 
 ## Usage
 
+PyColorPalette derives a color palette using K-means clustering to create a cluster map. To see the cluster map use ```show_clustering=True```.
+
 ```python
 from PyColorPalette import ColorPalette
 
-pal = ColorPalette("/Users/user/Pictures/my_image.png")
+pal = ColorPalette("/Users/user/Pictures/my_image.png", show_clustering=False)
 
 print(pal.get_top_colors(k=5, ratio=False, rounded=True))
 # [(251.0, 243.0, 230.0), (101.0, 50.0, 81.0), (59.0, 18.0, 48.0), (58.0, 17.0, 47.0), (60.0, 19.0, 49.0)]
