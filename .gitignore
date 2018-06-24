@@ -9,7 +9,6 @@ __pycache__/
 *.png
 .vscode/
 .DS_Store
-examples/
 
 # Distribution / packaging
 .Python
