@@ -35,17 +35,18 @@ print(pal.get_color(index=3, ratio=True, rounded=True))
 ![Alt text](/examples/ex_1_4.png?raw=true  "")
 ![Alt text](/examples/ex_1_5.png?raw=true  "")
 
-![Alt text](/examples/example2.png)
-![Alt text](/examples/ex_2_1.png?raw=true  "")
-![Alt text](/examples/ex_2_2.png?raw=true  "")
-![Alt text](/examples/ex_2_3.png?raw=true  "")
-
 ![Alt text](/examples/example3.jpg)
 ![Alt text](/examples/ex_3_1.png?raw=true  "")
 ![Alt text](/examples/ex_3_2.png?raw=true  "")
 ![Alt text](/examples/ex_3_3.png?raw=true  "")
 ![Alt text](/examples/ex_3_4.png?raw=true  "")
 ![Alt text](/examples/ex_3_5.png?raw=true  "")
+
+![Alt text](/examples/example2.png)
+![Alt text](/examples/ex_2_1.png?raw=true  "")
+![Alt text](/examples/ex_2_2.png?raw=true  "")
+![Alt text](/examples/ex_2_3.png?raw=true  "")
+
 
 ## Installation
 
