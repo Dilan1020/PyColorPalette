@@ -28,9 +28,11 @@ print(pal.get_color(index=3, ratio=True, rounded=True))
 
 ## Examples
 
-![ScreenShot] (/examples/example1.jpg)
+![ScreenShot] (/examples/example1.jpg?raw=true)
 
-![Alt text] (/examples/ex_1_1.png)
+![ScreenShot] (examples/example1.jpg?raw=true)
+
+![Alt text] (/examples/ex_1_1.png?raw=true)
 ![Alt text] (/examples/ex_1_2.png?raw=true  "")
 ![Alt text] (/examples/ex_1_3.png?raw=true  "")
 ![Alt text] (/examples/ex_1_4.png?raw=true  "")
