@@ -14,7 +14,7 @@ pip install numpy
 
 ## Usage
 
-PyColorPalette derives a color palette using K-means clustering to create a cluster map. To see the cluster map use ```show_clustering=True```.
+PyColorPalette derives a color palette using K-means clustering to create a cluster map. To see the cluster map use ```show_clustering=True```. ([Thank you, ZeevG](https://www.google.com))
 
 ```python
 from PyColorPalette import ColorPalette

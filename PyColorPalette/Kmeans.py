@@ -104,18 +104,7 @@ class Kmeans(object):
             return False
 
         return True
-
-    # ############################################
-    # The remaining methods are used for debugging
-    def showImage(self):
-        self.image.show()
-
-    def showCentroidColours(self):
-
-        for cluster in self.clusters:
-            image = Image.new("RGB", (200, 200), cluster.centroid)
-            image.show()
-
+        
     def showClustering(self):
 
         localPixels = [None] * len(self.image.getdata())
