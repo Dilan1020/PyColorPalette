@@ -4,16 +4,6 @@ PyColorPalette is a Python 3 tool that is able to pull a list of the top colors,
 
 _**See examples below!**_
 
-## Dependencies
-
-PyColorPalette uses the Python Imaging Library (PIL) and numpy.
-To Install:
-```
-pip install Pillow 
-pip install numpy
-```
-(Pillow and PIL cannot co-exist in the same environment. Before installing Pillow, please uninstall PIL if previosuly installed.)
-
 ## Usage
 
 PyColorPalette derives a color palette using K-means clustering to create a cluster map. To see the cluster map use ```show_clustering=True```. ([Thank you, ZeevG](https://github.com/ZeevG/python-dominant-image-colour))
@@ -57,6 +47,15 @@ print(pal.get_color(index=3, ratio=True, to_hex=True))
 ![Alt text](/examples/ex_2_2.png?raw=true  "")
 ![Alt text](/examples/ex_2_3.png?raw=true  "")
 
+## Dependencies
+
+PyColorPalette uses the Python Imaging Library (PIL) and numpy.
+To Install:
+```
+pip install Pillow 
+pip install numpy
+```
+(Pillow and PIL cannot co-exist in the same environment. Before installing Pillow, please uninstall PIL if previosuly installed.)
 
 ## Installation
 
