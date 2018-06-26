@@ -29,7 +29,6 @@ print(pal.get_top_colors(n=5, ratio=False, rounded=True))
 print(pal.get_color(index=3, ratio=True, rounded=True))
 # ((58.0, 17.0, 47.0), 0.1953125)
 
-
 '''
 Retrieve values in hex.
 '''
