@@ -1,1 +1,4 @@
-from .core import ColorPalette
+try:
+    from .core import ColorPalette
+except ImportError:
+    from core import ColorPalette

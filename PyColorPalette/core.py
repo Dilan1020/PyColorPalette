@@ -14,7 +14,7 @@ class ColorPalette():
         self.k = k
         self.path = path
         self.show_clustering = show_clustering
-        urls = re.findall('http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', path)
+        urls = re.findall(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+', path)
         if not urls:
             self.__is_url = False    
         else:
@@ -79,39 +79,63 @@ class ColorPalette():
 
         return difference
 
-    def __re_round(self, li, _prec=5):
-        try:
-            return round(li, _prec)
-        except TypeError:
-            return type(li)(self.__re_round(x, _prec) for x in li)
+    def _rgb2hex(self, rgb_tuple):
+        r, g, b = rgb_tuple
+        return "#{:02x}{:02x}{:02x}".format(r,g,b)
 
-    def get_top_colors(self, n=5, ratio=False, rounded=True):
+    def __re_round(self, li):
+        try:
+            return int(round(li, 0))
+        except TypeError:
+            return type(li)(self.__re_round(x) for x in li)
+
+    def get_top_colors(self, n=5, ratio=False, rounded=True, to_hex=False):
         if n > 5:
             raise ValueError("Max query is 5")
 
         sorted_tups = self.sorted_tups
 
         if rounded:
-            sorted_tups = self.__re_round(sorted_tups, _prec=0)    
+            sorted_tups = self.__re_round(sorted_tups)    
 
         if not ratio:
-            return [color[0] for color in sorted_tups[:n]]
+            if to_hex:
+                sorted_tups = self.__re_round(sorted_tups)    
+                hex_tups = [self._rgb2hex(f[0]) for f in sorted_tups[:n]]
+                return hex_tups
+            else:
+                return [color[0] for color in sorted_tups[:n]]
         else:
-            return [color for color in sorted_tups[:n]]
+            if to_hex:
+                sorted_tups = self.__re_round(sorted_tups)    
+                hex_tups = [(self._rgb2hex(f[0]), f[1]) for f in sorted_tups[:n]]
+                return hex_tups
+            else:
+                return [color for color in sorted_tups[:n]]
 
-    def get_color(self, index, ratio=False, rounded=True):
+    def get_color(self, index, ratio=False, rounded=True, to_hex=False):
         if index > 5:
             raise ValueError("Max query is 5")
 
         sorted_tups = self.sorted_tups
 
         if rounded:
-            sorted_tups = self.__re_round(sorted_tups, _prec=0)    
+            sorted_tups = self.__re_round(sorted_tups)    
 
         if not ratio:
-            return sorted_tups[index][0]
+            if to_hex:
+                sorted_tups = self.__re_round(sorted_tups)    
+                return self._rgb2hex(sorted_tups[index][0])
+            else:
+                return sorted_tups[index][0]
         else:
-            return sorted_tups[index]
+            if to_hex: 
+                sorted_tups = self.__re_round(sorted_tups)    
+                val = self._rgb2hex(sorted_tups[index][0])
+                ratio = sorted_tups[index][1]
+                return (val, ratio)
+            else:
+                return sorted_tups[index]
 
 '''
 PUT EXAMPLES IN README
