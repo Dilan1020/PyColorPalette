@@ -11,7 +11,7 @@ PyColorPalette derives a color palette using K-means clustering to create a clus
 ```python
 from PyColorPalette import ColorPalette
 
-pal = ColorPalette("/Users/user/Pictures/my_image.png", show_clustering=False)
+pal = ColorPalette(r"/Users/user/Pictures/my_image.png", show_clustering=False) #Use a raw string with a Windows path.
 
 print(pal.get_top_colors(n=5, ratio=False, rounded=True))
 # [(251.0, 243.0, 230.0), (101.0, 50.0, 81.0), (59.0, 18.0, 48.0), (58.0, 17.0, 47.0), (60.0, 19.0, 49.0)]
@@ -59,4 +59,4 @@ pip install numpy
 
 ## Installation
 
-Place "PyColorPalette" folder in your project directory.
+```pip install PyColorPalette```
