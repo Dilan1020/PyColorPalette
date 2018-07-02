@@ -1,6 +1,6 @@
 # PyColorPalette
 
-PyColorPalette is a Python 3 tool that is able to pull a list of the top colors, or the color at a specific index, from a given image through the process of K-means clustering. Images can be provided either through a direct path or from a URL. Along with the RGB color you have the option to also retreive the percentage of the image that specific color takes up. 
+PyColorPalette is a Python 3 tool capable of pulling a list of the top colors, or the color at a specific index, from a given image through the process of K-means clustering. Images can be provided either through a direct path or from a URL. Along with the RGB/Hex color value, you have the option to also retreive the percentage of the image that specific color takes up. 
 
 _**See examples below!**_
 
@@ -15,16 +15,16 @@ pal = ColorPalette(r"/Users/user/Pictures/my_image.png", show_clustering=False)
 #Use a raw string for Windows paths.
 
 print(pal.get_top_colors(n=5, ratio=False, rounded=True))
-# [(251.0, 243.0, 230.0), (101.0, 50.0, 81.0), (59.0, 18.0, 48.0), (58.0, 17.0, 47.0), (60.0, 19.0, 49.0)]
+# [(251, 243, 230), (101, 50, 81), (59, 18, 48), (58, 17, 47), (60, 19, 49)]
 
 print(pal.get_color(index=3, ratio=True, rounded=True))
-# ((58.0, 17.0, 47.0), 0.1953125)
+# ((58, 17, 47), 14)
 
 '''
 Retrieve values in hex.
 '''
-print(pal.get_color(index=3, ratio=True, to_hex=True))
-# ('#3a112f', 0.1953125)
+print(pal.get_color(index=3, ratio=True, to_hex=True, rounded=False))
+# ('#3a112f', 14.1953125)
 ```
 
 ## Examples
