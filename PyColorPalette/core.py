@@ -2,7 +2,7 @@ from PIL import Image
 import re
 import urllib.request
 import io
-from .Kmeans import Kmeans
+from PyColorPalette.Kmeans import Kmeans
 from functools import partial
 
 

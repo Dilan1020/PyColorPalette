@@ -1,4 +1,3 @@
-try:
-    from .core import ColorPalette
-except ImportError:
-    from core import ColorPalette
+name="PyColorPalette"
+
+from PyColorPalette.core import ColorPalette
