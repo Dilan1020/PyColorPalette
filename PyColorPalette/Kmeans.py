@@ -1,5 +1,5 @@
 '''
-Modified Version of ZeevG's K-means implementation @ https://github.com/ZeevG/python-dominant-image-colour
+Modified Version of ZeevG's K-means implementation
 '''
 
 import numpy
