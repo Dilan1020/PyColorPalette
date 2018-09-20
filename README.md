@@ -6,7 +6,7 @@ _**See examples below!**_
 
 ## Usage
 
-PyColorPalette derives a color palette using K-means clustering to create a cluster map. To see the cluster map use ```show_clustering=True```. ([Thank you, ZeevG](https://github.com/ZeevG/python-dominant-image-colour))
+PyColorPalette derives a color palette using K-means clustering to create a cluster map. To see the cluster map use ```show_clustering=True```. (Thank you, ZeevG)
 
 ```python
 from PyColorPalette import ColorPalette
