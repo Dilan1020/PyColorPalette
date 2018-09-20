@@ -137,9 +137,5 @@ class ColorPalette():
             else:
                 return sorted_tups[index]
 
-'''
-PUT EXAMPLES IN README
-DIVISION BY ZERO ERROR
-'''
     
 
